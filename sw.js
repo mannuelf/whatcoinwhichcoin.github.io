@@ -5,8 +5,8 @@ self.addEventListener('install', function(event) {
       .then(function(cache) {
         console.log('[Service Worker] Pre-caching static assets')
         cache.addAll([
-          '/',
-          '/index.html',
+          'https://mannuelf.github.io/whatcoinwhichcoin.github.io/',
+          'https://mannuelf.github.io/whatcoinwhichcoin.github.io//index.html',
           'https://fonts.googleapis.com/css?family=Rajdhani:300,600,700|Roboto+Mono:100,300',
           'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css',
           'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css',
