@@ -40,7 +40,7 @@ self.addEventListener('activate', function (event) {
 })
 
 self.addEventListener('fetch', function (event) {
-  // console.log('[Service Worker]', event);
+  console.log('[Service Worker]', event);
   event.respondWith(
     caches.match(event.request)
     .then(function (response) {
